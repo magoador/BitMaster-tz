@@ -1,0 +1,137 @@
+.App {
+  &__wrapper {
+    width: 55%;
+    height: 80%;
+    margin: 5% auto;
+  }
+
+  &__fText {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .From {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 40px auto 20px auto;
+    align-items: center;
+
+    &__Text {
+      font-size: 20px;
+    }
+
+    &__Input {
+      input {
+        width: 370px;
+        height: 35px;
+        font-size: 16px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .Suitable {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    &__text {
+      font-size: 18px;
+    }
+
+    .Card {
+      display: flex;
+      gap: 20px;
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 3px;
+
+      &__svg {
+        img {
+          max-width: 30px;
+        }
+      }
+
+      &__carName {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      &__carColor {
+        margin-bottom: 3px;
+      }
+
+      &__carNumbers {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 2px 5px;
+      }
+    }
+  }
+
+  .MapAndList {
+    display: flex;
+    gap: 20px;
+    max-height: 500px;
+    margin-bottom: 30px;
+
+    .List {
+      overflow-y: auto;
+      width: 30%;
+      border: 1px solid black;
+      &__suitable {
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid black;
+      }
+
+      &__suitableSvg {
+        img {
+          max-width: 30px;
+        }
+      }
+
+      &__suitableInfo {
+        display: flex;
+        align-items: flex-end;
+        flex: 1;
+      }
+
+      &__suitableNameAndColor {
+        flex: 1;
+      }
+
+      &__suitableName {
+        margin-bottom: 5px;
+      }
+
+      &__suitableButton {
+        button {
+          cursor: pointer;
+          background-color: transparent;
+          border: none;
+          img {
+            max-width: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .App__order {
+    text-align: center;
+    button {
+      cursor: pointer;
+      font-size: 18px;
+      width: 300px;
+      height: 50px;
+      background-color: transparent;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+  }
+}
